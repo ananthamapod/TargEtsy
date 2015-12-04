@@ -1,0 +1,29 @@
+{
+  "name": "TargEtsy",
+  "version": "0.0.0",
+  "description": "Tool for targeted marketing on Etsy. Uses a photograph of a user to predict the kinds of things he/she would be interested in on Etsy and present these things to him/her ordered by increasing radius",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(http://github.com/ananthamapod/TargEtsy.git)"
+  },
+  "keywords": [
+    "marketing",
+    "machine",
+    "learning"
+  ],
+  "author": "Ananth Rao <ananthamapod@gmail.com> (http://ananthamapod.github.io)",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "angular": "^1.4.6",
+    "body-parser": "^1.14.0",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "http": "0.0.0",
+    "request": "^2.64.0"
+  }
+}

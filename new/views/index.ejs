@@ -1,0 +1,53 @@
+<% layout('layout') -%>
+
+    <!-- Navigation -->
+    <div id="navbar" class="container-fluid text-center">
+        <a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo.png"/></a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="panel" >
+                    <img class="img-responsive" src="img/Etsy-Handmade-Collage.jpg"/>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div id="form" class="panel panel-default">
+                <div class="panel-heading">
+                    <p><strong>Upload a picture</strong></p>
+                    <p><small>Find something you didn't even know you wanted. Until now.</small></p>
+                </div>
+                <div class="panel-body">
+
+                  <!-- Standar Form -->
+                  <h4>Select a file from your computer</h4>
+                  <form action="/sendImage" method="post" enctype="multipart/form-data" id="js-upload-form">
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <input type="file" name="files[]" id="js-upload-files" single>
+                      </div>
+                      <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload file</button>
+                    </div>
+                  </form>
+
+                  <!-- Drop Zone -->
+                  <h4>Or drag and drop a file below</h4>
+                  <div class="upload-drop-zone" id="drop-zone">
+                    Just drag and drop your file here
+                  </div>
+                  <div id="messages">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Put your page content here! -->
+
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="index-js.js"></script>
